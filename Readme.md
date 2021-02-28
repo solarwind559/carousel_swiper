@@ -1,7 +1,6 @@
 # Test task to create a Swiper Carousel in React
 **Must have nodejs installed**
-##### Created with SwiperJS, responsive on mobile and web
-===
+
 ===
 
 
@@ -73,34 +72,40 @@ import ReactDOM from 'react-dom';
 
 
 12. Create your first component:
+```
 const App = () => (
     <div></div>
-
+```
 
 13. To export the component to be able to use it elsewhere, at the end of page type:
+```
 export default App;
-
+```
 
 14. Create a file index.js in src, repeat the import react step, + add:
+```
 import ReactDOM from 'react-dom';
 import App from './App';
-
+```
 
 15. to render out your component, use:
+```
 ReactDOM.render(<App/>, document.querySelector("#root"));
-
+```
 
 16. Create an index.html file in src and inside it create a div:
+```
 <div id="root"></div>
-
+```
 
 17. To run webpack:
 go to package.json,
 find "scripts" and instead of it's "test", set up your script:
+```
     "start": "webpack serve --hot --open",
     "build": "webpack --config webpack.config.js --mode production"
   it will make your script run when you start your project on server
-
+```
 
 18. Install the html plugin to link the app to html:
   ```
@@ -131,7 +136,7 @@ Type in terminal:
 
 ===================================================
 
-## Write your code in the src folder
+### Write your code in the src folder
 
 ===================================================
 
@@ -168,15 +173,16 @@ git remote add origin http://yourghprojectlink
 "deploy": "gh-pages -d build" 
 ```
 
-7. npm run deploy. Get an error...
-
-8. Since we have no build folder, try
+7. Since we have no build folder, instead of gh-pages -d build, try:
 ```
 gh-pages -d dist"
 ```
-instead of gh-pages -d build
 
-9. Complete the authentication into GitHub
+8. Complete the authentication into GitHub...
+```
+npm run deploy
+```
+
 ```
 info: please complete authentication in your browser...
 Published
