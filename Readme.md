@@ -125,10 +125,10 @@ Type in terminal:
   npm start 
   ```
 
-### Place your code files in the src folder.
+### Write all your code in the src folder.
 
 
-##To deploy your project on Git:
+## To deploy your project on Git:
 
 ```
 npm install gh-pages --save-dev
