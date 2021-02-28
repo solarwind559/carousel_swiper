@@ -1,54 +1,45 @@
 # Test task to create a Swiper Carousel in React
 **Must have nodejs installed**
 
-===
 
 
 ## Set up React environment:
-
 
 1. Create package.json:
   ```
   npm init -y
   ```
 
-
 2. Create node modules and package-lock.json:
   ```
   npm install react react-dom
   ```
 
-
-3. Install needed Babel packages
+3. Install needed Babel packages:
   ```
   npm install @babel/core @babel/preset-env @babel/preset-react babel-loader
   ```
-
 
 4. Create a babel file in your project folder:
 ```
 .babelrc
 ```
 
-
 5. To be able to transpile your code, in the .babelrc file type: 
 ```
 { "presets": ["@babel/preset-react","@babel/preset-env"] }
 ```
-
-===
-
 
 6. To add **Webpack**, type in the terminal:
   ```
   npm install webpack webpack-cli webpack-dev-server
   ```
 
-
-7. Connect Webpack to Babel:
+7. Connect Webpack to Babel,
 Create a file in your folder:
+```
   webpack.config.js
-
+```
 
 8. To configure your Webpack, add this code to your config file:
 ```
@@ -64,9 +55,10 @@ in the config.js file, add:
 
 
 10. Set it up by typing:
+```
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+```
 
 11. In the right-bottom corner, change the language mode from JavaScript to JavasScript React.
 
@@ -99,12 +91,11 @@ ReactDOM.render(<App/>, document.querySelector("#root"));
 ```
 
 17. To run webpack:
-go to package.json,
+Go to package.json,
 find "scripts" and instead of it's "test", set up your script:
 ```
     "start": "webpack serve --hot --open",
     "build": "webpack --config webpack.config.js --mode production"
-  it will make your script run when you start your project on server
 ```
 
 18. Install the html plugin to link the app to html:
@@ -112,12 +103,12 @@ find "scripts" and instead of it's "test", set up your script:
   npm install html-webpack-plugin
   ```
 
-19. Install a css package and create a .css file in your src folder
+19. Install a css package and create a .css file in your src folder:
   ```
   npm install style-loader css-loader
   ```
   
-20. In App.js, import your css file
+20. In App.js, import your css file.
 
 
 21. Final installs:
@@ -134,33 +125,29 @@ Type in terminal:
   npm start 
   ```
 
-===================================================
+### Place your code files in the src folder.
 
-### Write your code in the src folder
-
-===================================================
 
 ##To deploy your project on Git:
-
 
 ```
 npm install gh-pages --save-dev
 ```
 
-1. Create your Git Repository
+1. Create your Git Repository.
 
-2. install 
+2. Install:
 ```
 git init
 ```
 
-3. Fetch your project's adress
+3. Fetch your project's adress:
 
 ```
 git remote add origin http://yourghprojectlink
 ```
 
-4. Get an error :) Try installing https://git-scm.com/download/win and fix it
+4. Get an error :) Try installing https://git-scm.com/download/win and fix it.
 
 5. In package.json, add this:
 ```
@@ -182,7 +169,7 @@ gh-pages -d dist"
 ```
 npm run deploy
 ```
-
+See this(?):
 ```
 info: please complete authentication in your browser...
 Published
