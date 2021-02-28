@@ -128,7 +128,7 @@ Type in terminal:
 ### Write all your code in the src folder.
 
 
-## To deploy your project on Git:
+## To deploy your project on GitHub:
 
 ```
 npm install gh-pages --save-dev
